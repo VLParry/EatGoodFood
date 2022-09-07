@@ -1,5 +1,5 @@
 import React from 'react'
-import { recipes } from "..db.json";
+
 
 const Recipes = () => {
   return (
