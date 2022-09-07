@@ -2,9 +2,171 @@
     "recipes": [
         {
             "id": 1,
-            "title": "",
-            "ingredients": "",
-            "instructions": ""
+            
+            "title": "Stuffed Avocado",
+           
+            "ingredients":
+            
+            ["1 ripe avocado",
+            "1 small ripe tomato, cut into 1/4-inch dice",
+             "1 tablespoon crumbled feta cheese",
+             "1 tablespoon freshly squeezed lime juice",
+              "1 tablespoon fresh cilantro, chopped",
+             "2 tablespoons chopped cucumber",
+            "Salt and freshly ground black pepper"],
+           
+           
+            "instructions": "Halve avocado lengthwise, and remove the pit. Top each half with tomato and feta. Drizzle with lemon juice, and garnish with chives and pumpkin seeds. Season with salt and pepper, and serve.",
+
+            "image": "<img src=https://images.unsplash.com/photo-1546554137-f86b9593a222?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80>"
+        } ,
+        {
+            "id": 2,
+            
+            "title": "Butternut Squash Soup",
+            
+            "ingredients":
+            ["½ Tbsp. olive oil",
+            "2 garlic cloves minced",
+            "1 onion diced",
+           "1 butternut squash peeled and diced into cubes",
+            "32 ounces vegetable broth",
+            "1-2 tsp. salt"],
+
+            "instructions":"In a dutch oven pot (or heavy pot), heat olive oil over medium heat. Add onion and garlic. cook until softened, about 5 minutes. Add cut up butternut squash and vegetable broth. Bring to a boil then cover and simmer for 15-20 minutes until squash is softened. Carefully pour entire contents of pot into blender (I use my Vitamix). Add salt. Carefully blend until smooth. Serve in bowls with thyme, feta crumbles and pinenuts if desired. Enjoy!",
+            
+            "image":"<img src=https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80>"
+
+        },
+        {
+            "id": 3,
+
+            "title": "Mint, Strawberry and Goat Cheese Salad",
+
+            "ingredients":
+            ["5 cups of spinach",
+            "1 cup fresh strawberries, sliced",
+            "¼ cup sliced almonds",
+            "2 tbs freshly chopped mint",
+            "3 oz soft goat cheese",
+            "¼ cup balsamic vinegar",
+            " 2 tsp honey",
+            "1 tbs chopped garlic",
+            "½ tsp salt",
+            "½ tsp freshly ground black pepper",
+            "¾ cup olive oil"],
+
+            "instructions": "For the salad: Gently toss spinach, strawberries, almonds, and mint in a large bowl. Crumble goat cheese over salad, and pour over balsamic vinaigrette to taste. Serve within 1-2 hours of preparation. For the dressing: Whisk all ingredients except for olive oil together in a small bowl until salt is dissolved. Slowly pour olive oil until fully combined.",
+
+            "image":"<img src=https://images.unsplash.com/photo-1570197571499-166b36435e9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=706&q=80 >"
+
+        },
+
+        {
+            "id": 4,
+            "title": "Veggie Hummus Pita Sandwich",
+            "ingredients":[
+                "1 pita pocket",
+                "3 tbsp hummus",
+                "6 slices avocado",
+                "2 slices portobello mushroom",
+                "1 piece lettuce",
+                "1/4 cup alfalfa sprouts"
+
+            ],
+            "instructions":"Cut pita pocket in half lengthwise to expose the inner pocket. Liberally slather hummus inside each pocket, then top with remaining ingredients. Ensure they are spread out for even coverage. Serve immediately.",
+
+            "image":"<img src=https://images.unsplash.com/photo-1534352211968-8d25dbe0e951?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=729&q=80 >"
+
+        },
+        {
+            "id": 5,
+            "title": "Mixed Berry Smoothie",
+            "ingredients":
+            [
+                "1 1/2 cups apple juice can also use almond milk, skim milk, coconut milk or other flavor of juice",
+                "1 banana sliced",
+                "1 1/2 cups frozen mixed berries",
+                "3/4 cup vanilla Greek yogurt",
+                "1 tablespoon honey optional",
+                "Optional garnish: fresh berries and mint sprigs"
+            ],
+            "instructions":"Place the apple juice, banana, berries and yogurt in a blender; blend until smooth. If the smoothie seems too thick, add a little more liquid (1/4 cup). Taste and add honey if desired. Pour into two glasses and garnish with fresh berries and mint sprigs if desired.",
+            "image":"<img src=https://images.unsplash.com/photo-1553530666-ba11a7da3888?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=686&q=80 >"
+
+        },
+        {
+            "id": 6,
+            "title": "Mango Smoothie",
+            "ingredients":[
+                "2 fresh mangoes or 2 cups of frozen mango",
+                "1 small frozen banana (or half of a large banana) you can use unfrozen if using frozen mango",
+                "½ cup milk dairy or dairy-free",
+                "½ cup yogurt dairy or dairy-free"],
+            "instructions":"Add all ingredients to a high-powered blender and blend until creamy.",
+            "image":"<img src=https://images.unsplash.com/photo-1575159240102-4331f59433ac?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80 >"
+
+        },
+        {
+            "id": 7,
+            "title": "Veggie Pasta Salad",
+            "ingredients":[
+                "1 (12 oz) box tri-color rotini pasta",
+                "1 pint grape tomatoes, halved",
+                "1 1/2 cups diced English cucumber",
+                "1 1/2 cups tiny chopped broccoli florets",
+                "1 cup chopped yellow bell pepper",
+                "1 cup olives, sliced",
+                "3/4 cup thinly sliced baby carrots",
+                "1/3 cup chopped red onion",
+                "1/2 cup finely shredded parmesan cheese",
+                "1 1/3 cups bottled Italian salad dressing"
+            ],
+            "instructions":"Cook pasta according to package instructions to al dente but do not season water with salt (the dressing has plenty). Drain and rinse under cold water. Pour pasta into a bowl, add tomatoes, broccoli, bell pepper, olives, cucumber, carrots, red onion and parmesan. Pour dressing over and toss to evenly coat. Cover and chill at least 30 minutes (or up to 1 day). Add a little more dressing if needed.",
+            "image":"<img src=https://images.unsplash.com/photo-1630492782892-74f99406dc59?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80 >"
+
+        },
+        {
+            "id": 8,
+            "title": "Chia Seed Pudding",
+            "ingredients":[
+                "2 tablespoon chia seeds",
+                "1/2 cup almond milk or milk of choice",
+                "1 teaspoon honey or other sweetener, optional",
+                "Raspberries or other fruits for topping"
+            ],
+            "instructions":"Pour ingredients into a jar and mix well. Let settle for 2-3 minutes then mix again very well until you see no clumping. Cover the jar and store in fridge overnight or for at least 2 hours. When you’re ready to eat it, top with your favorite fruit and enjoy cold!",
+            "image":"<img src=https://images.unsplash.com/photo-1459162141474-3bd9d0fb079d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80>"
+
+        },
+        {
+            "id": 9,
+            "title": "Tomato, Mozzarella and Pesto Sandwich",
+            "ingredients":[
+                "1/2 cup prepared pesto",
+                "4 oz fresh mozzarella, thickly sliced",
+                "1 large tomato, thickly sliced",
+                "Lettuce",
+                "Ciabatta roll, wheat bread or bread of your choice"
+            ],
+            "instructions":"Spread some pesto on the cut side of both halves of each ciabatta roll. Lay a thick slice of mozzarella on the bottom halves, followed by a thick slice of tomato. Top with the other ciabatta halves and serve immediately!",
+            "image":"<img src=https://images.unsplash.com/photo-1539252554453-80ab65ce3586?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80 >"
+
+        },
+        {
+            "id": 10,
+            "title": "French Toast",
+            "ingredients":[
+                "1 egg",
+                "1 teaspoon vanilla extract",
+                "1/2 teaspoon cinnamon",
+                "1/4 milk",
+                "4 slices of bread",
+                "Fruit topping, optional"
+            ],
+            "instructions":"Beat egg, vanilla and cinnamon in shallow dish with wire whisk. Stir in milk. Dip bread in egg mixture, turning to coat both sides evenly. Cook bread slices on lightly greased nonstick griddle or skillet on medium heat until browned on both sides. Serve with syrup and fruit of your choice",
+            "image":"<img src=https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=898&q=80 >"
+
         }
 ]
 }
