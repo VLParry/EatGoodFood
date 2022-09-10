@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import Grid from '@mui/material/Grid';
 
 
 const Recipes = () => {
@@ -14,13 +15,14 @@ const Recipes = () => {
 
   return (
     <div>
-      <ul>
+      <Grid container spacing={2}>
         {recipes.map(recipe => (
-          <li key={recipe.id}>
-            {recipe.title} {recipe.image}
-          </li>
+          <Grid item xs={4} key={recipe.id}>
+            {recipe.title}
+            <img src={recipe.image} style={{width:"100px",display:"block"}} />
+          </Grid>
         ))}
-      </ul>
+      </Grid>
     </div>
   )
 }

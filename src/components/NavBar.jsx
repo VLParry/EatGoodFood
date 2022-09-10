@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { NavLink } from 'react-router-dom';
 import { Link } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -17,7 +16,14 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
-  },
+    "&:visited":{
+      color:"#c0ffee"
+    },
+    "&:hover":{
+      color:"papayawhip"
+    },
+
+    },
   green: {
     backgroundColor: "green"
   }
@@ -28,21 +34,6 @@ const NavBar = () => {
   const classes = useStyles();
   return (
 
-
-//     <div className='navbar'>
-//  <NavLink to="/"    >
-//         Home
-//       </NavLink>
-//       <NavLink to="/recipes">
-//         Recipes
-//       </NavLink>
-//       <NavLink
-//         to="/favorites" >
-//         Favorites
-//       </NavLink>
-      
-
-// </div>
 
 <div>
 
