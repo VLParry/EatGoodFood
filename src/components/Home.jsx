@@ -10,7 +10,7 @@ const Home = () => {
         setMainImage(data);
       });
   }, []);
-console.log(mainImage)
+
   return (
   <div>
     <div style={{textAlign:"center", fontSize:"24px"}}>
