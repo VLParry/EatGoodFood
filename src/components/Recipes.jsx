@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import Grid from '@mui/material/Grid';
-import Favorites from './Favorites';
+import Form from './Form';
 import { Link, Route,  } from "react-router-dom";
 import DisplayRecipe from './DisplayRecipe';
 
@@ -19,13 +19,14 @@ const Recipes = () => {
         setRecipes(data);
       });
   }, []);
-
+//want to make a link that will show full recipe and ingredients in a nested route
 const fullRecipe = Object.keys(recipes).map((recipeID) => (
   <li key={recipeID}>
     <Link to={`/recipes/${recipeID}`}>{[recipeID]}</Link>
   </li>
 ))
 
+// want to have button to add a recipe to favorites and be able to access them in favorites 
   const addToFaves = (recipe) => {
     if(!favorites.includes(recipe)){
       const updateFaves = [...favorites, recipe]
@@ -44,7 +45,7 @@ const fullRecipe = Object.keys(recipes).map((recipeID) => (
           </Grid>
         ))}
       </Grid>
-      <Favorites faves={addToFaves} />
+      <Form faves={addToFaves} />
       <DisplayRecipe recipes={recipes} />
     </div>
   )

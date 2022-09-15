@@ -44,7 +44,7 @@ const NavBar = () => {
             Eat.Good.Food.
           </Typography>
           <Button color="inherit" to="recipes" component= { Link }>All Recipes</Button>
-          <Button color="inherit" to="favorites" component= { Link }>Favorites</Button>
+          <Button color="inherit" to="addrecipe" component= { Link }>Add Recipe</Button>
         </Toolbar>
       </AppBar>
 </div>

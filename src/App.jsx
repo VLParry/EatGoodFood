@@ -2,7 +2,7 @@ import React from "react";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Recipes from "./components/Recipes";
-import Favorites from "./components/Favorites";
+import Form from "./components/Form";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 const App = () => {
@@ -12,7 +12,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/recipes" element={<Recipes />} />
-        <Route path="/favorites" element={<Favorites />} />
+        <Route path="/addrecipe" element={<Form />} />
       </Routes>
       </Router>
   );

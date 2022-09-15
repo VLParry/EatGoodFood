@@ -2,7 +2,7 @@ import * as React from 'react';
 
 
 
-const Favorites = ({ faves }) => {
+const Form = ({  }) => {
 
 
   return (
@@ -11,4 +11,4 @@ const Favorites = ({ faves }) => {
   )
 }
 
-export default Favorites
+export default Form
