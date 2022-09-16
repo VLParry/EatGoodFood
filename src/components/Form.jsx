@@ -34,8 +34,15 @@ function handleSubmit(e){
   return (
     <section>
       <h1>Add a New Recipe Here:</h1>
-      <form>
-        
+      <form onSubmit={handleSubmit}>
+<label>
+  Recipe Name:
+  <input 
+  type="text"
+  name="title"
+  value={newRecipes.title}
+  />
+</label>
       </form>
     </section>
 
