@@ -10,12 +10,14 @@ const [newRecipes, setNewRecipes] = useState({
   image: "",
   
 })
+console.log(newRecipes)
 
 function handleChange(e){
-  setNewRecipes({
+  const { name, value } = e.target
+  setNewRecipes((newRecipes) => ({
     ...newRecipes,
-    [e.target.name]: e.target.value,
-  })
+    [name] : value,
+  }));
 }
 
 function handleSubmit(e){
@@ -38,11 +40,11 @@ function handleSubmit(e){
   .then((r) => r.json())
   .then((addedRecipe) => onAddRecipe(addedRecipe))
 }
-console.log(handleSubmit)
-  return (
+
+return (
     <section>
       <h1>Add a New Recipe Here:</h1>
-      <form onSubmit={handleSubmit}>
+<form onSubmit={handleSubmit}>
 <p>
 <label>
   Recipe Name:
