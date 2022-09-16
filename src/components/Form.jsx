@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 
 
 
@@ -14,31 +14,25 @@ console.log(newRecipes)
 
 function handleChange(e){
   const { name, value } = e.target
-  setNewRecipes((newRecipes) => ({
-    ...newRecipes,
+  setNewRecipes((previousData) => ({
+    ...previousData,
     [name] : value,
   }));
 }
 
 function handleSubmit(e){
-  e.preventDefault()
-  fetch("http://localhost:3000/recipes",{
+  e.preventDefault();
+  fetch("http://localhost:3000/recipes", {
     method: "POST",
     headers: {
-      "Content-Type" : "application/json"
+      "Content-Type" : "application/json",
+      "Accepts": "application.json"
     },
-    body: JSON.stringify(
-      {
-        "title" : newRecipes.title,
-        "ingredients" : newRecipes.ingredients,
-        "instructions" : newRecipes.instructions,
-        "image" : newRecipes.image,
-      
-      }
-    )
+    body: JSON.stringify(newRecipes)
   })
   .then((r) => r.json())
   .then((addedRecipe) => onAddRecipe(addedRecipe))
+
 }
 
 return (

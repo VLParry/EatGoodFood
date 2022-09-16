@@ -26,9 +26,10 @@ const fullRecipe = Object.keys(recipes).map((recipeID) => (
   </li>
 ))
 
-function onAddRecipe(newRecipe){
+const onAddRecipe = (newRecipe) => {
 setRecipes([...recipes, newRecipe])
 }
+
 
   return (
     <div>
