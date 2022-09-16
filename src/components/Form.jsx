@@ -32,8 +32,14 @@ function handleSubmit(e){
   .then((addedRecipe) => onAddRecipe(addedRecipe))
 }
   return (
-    
-<div> </div>
+    <section>
+      <h1>Add a New Recipe Here:</h1>
+      <form>
+        
+      </form>
+    </section>
+
+
   )
 }
 
