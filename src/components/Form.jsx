@@ -8,7 +8,7 @@ const [newRecipes, setNewRecipes] = useState({
   ingredients: "",
   instructions: "",
   image: "",
-  correctIndex: 0,
+  
 })
 
 function handleChange(e){
@@ -31,13 +31,14 @@ function handleSubmit(e){
         "ingredients" : newRecipes.ingredients,
         "instructions" : newRecipes.instructions,
         "image" : newRecipes.image,
-        "correctIndex" : newRecipes.correctIndex
+      
       }
     )
   })
   .then((r) => r.json())
   .then((addedRecipe) => onAddRecipe(addedRecipe))
 }
+console.log(handleSubmit)
   return (
     <section>
       <h1>Add a New Recipe Here:</h1>
@@ -91,7 +92,7 @@ function handleSubmit(e){
 </label>
 </p>
 
-
+<button type="submit" color="blue">Add Your Recipe!</button>
       </form>
     </section>
 

@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import Grid from '@mui/material/Grid';
 import Form from './Form';
 import { Link, Route,  } from "react-router-dom";
-import DisplayRecipe from './DisplayRecipe';
+
 
 
 
@@ -26,8 +26,8 @@ const fullRecipe = Object.keys(recipes).map((recipeID) => (
   </li>
 ))
 
-function onAddRecipe(){
-
+function onAddRecipe(newRecipe){
+setRecipes([...recipes, newRecipe])
 }
 
   return (
@@ -42,7 +42,7 @@ function onAddRecipe(){
         ))}
       </Grid>
       <Form onAddRecipe={onAddRecipe} />
-      <DisplayRecipe recipes={recipes} />
+      
     </div>
   )
 }
