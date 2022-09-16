@@ -8,7 +8,7 @@ import DisplayRecipe from './DisplayRecipe';
 
 const Recipes = () => {
   const [recipes, setRecipes] = useState([])
-  const [favorites, setFavorites] = useState([])
+
 
 
 
@@ -26,13 +26,7 @@ const fullRecipe = Object.keys(recipes).map((recipeID) => (
   </li>
 ))
 
-// want to have button to add a recipe to favorites and be able to access them in favorites 
-  const addToFaves = (recipe) => {
-    if(!favorites.includes(recipe)){
-      const updateFaves = [...favorites, recipe]
-      setFavorites(updateFaves)
-    }
-  }
+
 
   return (
     <div>
