@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import {  useNavigate } from 'react-router-dom';
 
 
 
@@ -10,7 +11,8 @@ const [newRecipes, setNewRecipes] = useState({
   image: "",
   
 })
-console.log(newRecipes)
+
+const navigate = useNavigate()
 
 function handleChange(e){
   const { name, value } = e.target
@@ -38,7 +40,7 @@ function handleSubmit(e){
 return (
     <section>
       <h1>Add a New Recipe Here:</h1>
-<form onSubmit={handleSubmit}>
+<form onSubmit={handleSubmit} >
 <p>
 <label>
   Recipe Name:
@@ -88,7 +90,7 @@ return (
 </label>
 </p>
 
-<button type="submit" color="blue">Add Your Recipe!</button>
+<button onClick={() => navigate('/recipes')} type="submit">Add Your Recipe!</button>
       </form>
     </section>
 
