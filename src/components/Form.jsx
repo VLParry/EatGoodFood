@@ -2,7 +2,7 @@ import {useState, useEffect} from 'react';
 
 
 
-const Form = ({  }) => {
+const Form = ({ onAddRecipe }) => {
 const [newRecipes, setNewRecipes] = useState({
   title: "",
   ingredients: "",
@@ -26,9 +26,10 @@ function handleSubmit(e){
         "image" : newRecipes.image,
         "correctIndex" : newRecipes.correctIndex
       }
-
     )
   })
+  .then((r) => r.json())
+  .then((addedRecipe) => onAddRecipe(addedRecipe))
 }
   return (
     

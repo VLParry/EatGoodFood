@@ -26,7 +26,9 @@ const fullRecipe = Object.keys(recipes).map((recipeID) => (
   </li>
 ))
 
+function onAddRecipe(){
 
+}
 
   return (
     <div>
@@ -39,7 +41,7 @@ const fullRecipe = Object.keys(recipes).map((recipeID) => (
           </Grid>
         ))}
       </Grid>
-      <Form faves={addToFaves} />
+      <Form onAddRecipe={onAddRecipe} />
       <DisplayRecipe recipes={recipes} />
     </div>
   )
