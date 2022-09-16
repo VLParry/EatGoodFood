@@ -11,6 +11,13 @@ const [newRecipes, setNewRecipes] = useState({
   correctIndex: 0,
 })
 
+function handleChange(e){
+  setNewRecipes({
+    ...newRecipes,
+    [e.target.name]: e.target.value,
+  })
+}
+
 function handleSubmit(e){
   e.preventDefault()
   fetch("http://localhost:3000/recipes",{
@@ -43,7 +50,7 @@ function handleSubmit(e){
   placeholder='What is your recipe called?'
   name="title"
   value={newRecipes.title}
-  
+  onChange={handleChange}
   />
 </label>
 </p>
@@ -55,7 +62,7 @@ function handleSubmit(e){
   placeholder='What do we need to make your recipe?'
   name="ingredients"
   value={newRecipes.ingredients}
-  
+  onChange={handleChange}
   />
 </label>
 </p>
@@ -67,7 +74,7 @@ function handleSubmit(e){
   placeholder='How can we make this ourselves?'
   name="instructions"
   value={newRecipes.instructions}
-  
+  onChange={handleChange}
   />
 </label>
 </p>
@@ -79,7 +86,7 @@ function handleSubmit(e){
   placeholder='Do you have a picture of your food?'
   name="image"
   value={newRecipes.image}
-  
+  onChange={handleChange}
   />
 </label>
 </p>
