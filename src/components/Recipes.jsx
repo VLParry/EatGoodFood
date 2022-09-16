@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import Grid from '@mui/material/Grid';
 import Form from './Form';
-import { Link, Route,  } from "react-router-dom";
+
 
 
 
@@ -19,12 +19,7 @@ const Recipes = () => {
         setRecipes(data);
       });
   }, []);
-//want to make a link that will show full recipe and ingredients in a nested route
-const fullRecipe = Object.keys(recipes).map((recipeID) => (
-  <li key={recipeID}>
-    <Link to={`/recipes/${recipeID}`}>{[recipeID]}</Link>
-  </li>
-))
+
 
 const onAddRecipe = (newRecipe) => {
 setRecipes([...recipes, newRecipe])
