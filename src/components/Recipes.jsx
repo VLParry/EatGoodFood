@@ -26,7 +26,13 @@ const Recipes = () => {
 
   return (
     <div>
-      <Grid container spacing={2}>
+      <Grid container spacing={2} 
+      style={{
+        color: 'darkgreen', 
+        fontFamily: 'Helvetica-Bold', 
+        fontSize: "25px",
+        
+        }}>
         {recipes.map(recipe => (
           <Grid item xs={4} key={recipe.id}>
             {recipe.title}
