@@ -21,9 +21,7 @@ const Recipes = () => {
   }, []);
 
 
-const onAddRecipe = (newRecipe) => {
-setRecipes([...recipes, newRecipe])
-}
+
 
 
   return (
@@ -37,7 +35,7 @@ setRecipes([...recipes, newRecipe])
           </Grid>
         ))}
       </Grid>
-      <Form onAddRecipe={onAddRecipe} />
+     
       
     </div>
   )

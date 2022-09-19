@@ -3,7 +3,7 @@ import {  useNavigate } from 'react-router-dom';
 
 
 
-const Form = ({ onAddRecipe }) => {
+const Form = ({  }) => {
 const [newRecipes, setNewRecipes] = useState({
   title: "",
   ingredients: "",
@@ -14,7 +14,7 @@ const [newRecipes, setNewRecipes] = useState({
 
 const navigate = useNavigate()
 
-function handleChange(e){
+const handleChange = (e) => {
   const { name, value } = e.target
   setNewRecipes((previousData) => ({
     ...previousData,
@@ -22,7 +22,7 @@ function handleChange(e){
   }));
 }
 
-function handleSubmit(e){
+const handleSubmit= (e)=> {
   e.preventDefault();
   fetch("http://localhost:3000/recipes", {
     method: "POST",
@@ -32,8 +32,7 @@ function handleSubmit(e){
     },
     body: JSON.stringify(newRecipes)
   })
-  .then((r) => r.json())
-  .then((addedRecipe) => onAddRecipe(addedRecipe))
+  .then(() => navigate('/recipes'))
 
 }
 
@@ -90,7 +89,7 @@ return (
 </label>
 </p>
 
-<button onClick={() => navigate('/recipes')} type="submit">Add Your Recipe!</button>
+<button type="submit">Add Your Recipe!</button>
       </form>
     </section>
 
