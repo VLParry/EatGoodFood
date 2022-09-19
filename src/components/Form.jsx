@@ -1,7 +1,10 @@
 import {useState} from 'react';
 import {  useNavigate } from 'react-router-dom';
 
-
+const formStyles = {
+  color: 'brown',
+    width: '500px'
+}
 
 const Form = ({  }) => {
 const [newRecipes, setNewRecipes] = useState({
@@ -39,12 +42,13 @@ const handleSubmit= (e)=> {
 return (
     <section>
       <h1>Add a New Recipe Here:</h1>
-<form onSubmit={handleSubmit} >
+<form onSubmit={handleSubmit} style={formStyles}>
 <p>
 <label>
   Recipe Name:
   <input 
   type="text"
+  style={{width: '500px'}}
   placeholder='What is your recipe called?'
   name="title"
   value={newRecipes.title}
@@ -57,6 +61,7 @@ return (
   Ingredients:
   <input 
   type="text"
+  style={{width: '500px'}}
   placeholder='What do we need to make your recipe?'
   name="ingredients"
   value={newRecipes.ingredients}
@@ -69,6 +74,7 @@ return (
   Instructions:
   <input 
   type="text"
+  style={{width: '500px'}}
   placeholder='How can we make this ourselves?'
   name="instructions"
   value={newRecipes.instructions}
@@ -81,6 +87,7 @@ return (
   Image:
   <input 
   type="text"
+  style={{width: '500px'}}
   placeholder='Do you have a picture of your food?'
   name="image"
   value={newRecipes.image}
@@ -89,7 +96,7 @@ return (
 </label>
 </p>
 
-<button type="submit">Add Your Recipe!</button>
+<button type="submit" style={{color: "darkgreen", backgroundColor: "#86d46a", fontStyle: "oblique"}}>Add Your Recipe!</button>
       </form>
     </section>
 
