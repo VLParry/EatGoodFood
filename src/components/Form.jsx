@@ -1,9 +1,11 @@
 import {useState} from 'react';
 import {  useNavigate } from 'react-router-dom';
+import Typography from '@material-ui/core/Typography';
 
 const formStyles = {
   color: 'brown',
-    width: '500px'
+    width: '500px',
+    textAlign: 'center'
 }
 
 const Form = ({  }) => {
@@ -43,7 +45,7 @@ return (
     <section>
       <h1>Add a New Recipe Here:</h1>
 <form onSubmit={handleSubmit} style={formStyles}>
-<p>
+<div >
 <label>
   Recipe Name:
   <input 
@@ -55,7 +57,7 @@ return (
   onChange={handleChange}
   />
 </label>
-</p>
+</div>
 <p>
 <label>
   Ingredients:
