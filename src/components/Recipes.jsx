@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import Grid from '@mui/material/Grid';
-import Form from './Form';
+import RecipeCard from './RecipeCard'
 
 
 
@@ -21,11 +21,10 @@ const Recipes = () => {
   }, []);
 
 
-
-
-
   return (
     <div>
+ 
+
       <Grid container spacing={2} 
       style={{
         color: 'darkgreen', 
@@ -34,13 +33,10 @@ const Recipes = () => {
         
         }}>
         {recipes.map(recipe => (
-          <Grid item xs={4} key={recipe.id}>
-            {recipe.title}
-            <img src={recipe.image} style={{width:"100px",display:"block"}} />
-            
-          </Grid>
+         <RecipeCard key={recipe.id} title={recipe.title} image={recipe.image} />
         ))}
       </Grid>
+      
      
       
     </div>
