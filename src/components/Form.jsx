@@ -7,8 +7,14 @@ const formStyles = {
     width: '500px',
     textAlign: 'center'
 }
+const sectionStyles ={
+  textAlign: "center",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center"
+}
 
-const Form = ({  }) => {
+const Form = () => {
 const [newRecipes, setNewRecipes] = useState({
   title: "",
   ingredients: "",
@@ -16,7 +22,7 @@ const [newRecipes, setNewRecipes] = useState({
   image: "",
   
 })
-
+//debugger
 const navigate = useNavigate()
 
 const handleChange = (e) => {
@@ -37,15 +43,21 @@ const handleSubmit= (e)=> {
     },
     body: JSON.stringify(newRecipes)
   })
-  .then(() => navigate('/recipes'))
 
+   // debugger
+  .then(() => navigate('/recipes'))
 }
 
 return (
-    <section>
+    <section style={sectionStyles}>
+       
+            
+          
       <h1>Add a New Recipe Here:</h1>
+      
 <form onSubmit={handleSubmit} style={formStyles}>
 <div >
+
 <label>
   Recipe Name:
   <input 
@@ -57,6 +69,7 @@ return (
   onChange={handleChange}
   />
 </label>
+
 </div>
 <p>
 <label>
@@ -100,6 +113,7 @@ return (
 
 <button type="submit" style={{color: "darkgreen", backgroundColor: "#86d46a", fontStyle: "oblique"}}>Add Your Recipe!</button>
       </form>
+      
     </section>
 
 
