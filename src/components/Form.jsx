@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import {  useNavigate } from 'react-router-dom';
-import Typography from '@material-ui/core/Typography';
+
 
 const formStyles = {
   color: 'brown',
@@ -22,7 +22,7 @@ const [newRecipes, setNewRecipes] = useState({
   image: "",
   
 })
-//debugger
+
 const navigate = useNavigate()
 
 const handleChange = (e) => {
@@ -43,8 +43,6 @@ const handleSubmit= (e)=> {
     },
     body: JSON.stringify(newRecipes)
   })
-
-   // debugger
   .then(() => navigate('/recipes'))
 }
 
@@ -56,8 +54,7 @@ return (
       <h3>Add a New Recipe Here:</h3>
       
 <form onSubmit={handleSubmit} style={formStyles}>
-<div >
-
+<p>
 <label>
   Recipe Name:
   <input 
@@ -69,8 +66,8 @@ return (
   onChange={handleChange}
   />
 </label>
+</p>
 
-</div>
 <p>
 <label>
   Ingredients:
@@ -84,6 +81,7 @@ return (
   />
 </label>
 </p>
+
 <p>
 <label>
   Instructions:
@@ -97,6 +95,7 @@ return (
   />
 </label>
 </p>
+
 <p>
 <label>
   Image:
