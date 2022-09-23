@@ -51,9 +51,9 @@ const handleSubmit= (e)=> {
 return (
     <section style={sectionStyles}>
        
-            
+    <h1>Have a healthy recipe you'd like to share?</h1>
           
-      <h1>Add a New Recipe Here:</h1>
+      <h3>Add a New Recipe Here:</h3>
       
 <form onSubmit={handleSubmit} style={formStyles}>
 <div >
