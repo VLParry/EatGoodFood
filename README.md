@@ -22,10 +22,10 @@ Looking for some inspiration in the kitchen? Look no further. Eat Good Food is c
 ## Installation
 
     - Fork and Clone this repository and navigate to the repo's folder
-    - Install package.json dependencies
+    - Run Yarn install
         * npm install -g json-server
         * json-server --watch db.json --port 3000
-    -In another terminal run npm or yarn start
+    -In another terminal run yarn start
         * you can then open http://localhost:3001 to view app in your browser.
 
 ## Stretch goals
