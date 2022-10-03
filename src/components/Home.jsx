@@ -17,7 +17,7 @@ const Home = () => {
       <p>Looking for some inspiration in the kitchen? Look no further. </p>
       <p>Eat Good Food is chock full of healthy recipes to nourish your body!</p>
       </div>
-<img src={mainImage.image} style={{width:"100%",display:"block"}} />
+<img src={mainImage.image} alt="spread of delicous food" style={{width:"100%",display:"block"}} />
 </div>
   )
 }
